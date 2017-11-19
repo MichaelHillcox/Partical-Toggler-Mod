@@ -1,0 +1,19 @@
+[
+{
+  "modid": "Particles",
+  "name": "Particles",
+  "description": "Allows you to change your Particles setting though a button press",
+  "version": "1.0",
+  "credits": "Created by AoKMiKeY",
+  "logoFile": "",
+  "mcversion": "1.7.10",
+  "url": "http://www.aokmikey.codarchive.com/",
+  "updateUrl": "",
+  "authors": [ "AoKMiKeY" ],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": [
+	 "mod_MinecraftForge"
+]
+}
+]
