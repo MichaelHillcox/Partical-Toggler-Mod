@@ -1,6 +1,6 @@
-package com.aokmikey.particlesToggler.proxy;
+package com.aokmikey.particlestoggler.proxy;
 
-import com.aokmikey.particlesToggler.client.settings.Keybindings;
+import com.aokmikey.particlestoggler.client.settings.Keybindings;
 import cpw.mods.fml.client.registry.ClientRegistry;
 
 /**

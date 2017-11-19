@@ -1,4 +1,4 @@
-package com.aokmikey.particlesToggler.client.settings;
+package com.aokmikey.particlestoggler.client.settings;
 
 import net.minecraft.client.settings.KeyBinding;
 import org.lwjgl.input.Keyboard;
