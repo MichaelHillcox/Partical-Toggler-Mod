@@ -3,7 +3,7 @@
 	"name": "Particles",
 	"description": "Allows you to change your Particles setting through a button press",
 	"version": "${version}",
-	"credits": "",
+	"credits": "Michael Hillcox",
 	"logoFile": "",
 	"mcversion": "${mcversion}",
 	"url": "https://github.com/MichaelHillcox/Partical-Toggler-Mod",
