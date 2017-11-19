@@ -1,19 +1,17 @@
-[
-{
-  "modid": "Particles",
-  "name": "Particles",
-  "description": "Allows you to change your Particles setting though a button press",
-  "version": "1.0",
-  "credits": "Created by AoKMiKeY",
-  "logoFile": "",
-  "mcversion": "1.7.10",
-  "url": "http://www.aokmikey.codarchive.com/",
-  "updateUrl": "",
-  "authors": [ "AoKMiKeY" ],
-  "parent":"",
-  "screenshots": [],
-  "dependencies": [
-	 "mod_MinecraftForge"
-]
-}
-]
+[{
+	"modid": "particles",
+	"name": "Particles",
+	"description": "Allows you to change your Particles setting through a button press",
+	"version": "${version}",
+	"credits": "Michael Hillcox",
+	"logoFile": "",
+	"mcversion": "${mcversion}",
+	"url": "https://github.com/MichaelHillcox/Partical-Toggler-Mod",
+	"updateUrl": "https://raw.githubusercontent.com/MichaelHillcox/Partical-Toggler-Mod/master/versions.json",
+	"authors": ["Michael Hillcox"],
+	"parent": "",
+	"screenshots": [],
+	"dependencies": [
+		"mod_MinecraftForge"
+	]
+}]
