@@ -15,7 +15,7 @@ import org.lwjgl.input.Keyboard;
  * Created by Mikey on 22/03/2015.
  */
 
-@Mod(modid = "particles", version = "1.7.10-1.0", name = "Particles")
+@Mod(modid = "particles", version = "1.7.10-1.0.0", name = "Particles")
 public class Particles
 {
     public static KeyBinding toggle = new KeyBinding("Toggle Particles", Keyboard.KEY_P, "Particles");
