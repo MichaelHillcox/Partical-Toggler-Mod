@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10-1.0.1.7"
-group= "com.fgtXray" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Fgt X-Ray"
+version = "1.7.10-1.0.0"
+group= "com.aokmikey.particlestoggler" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "Partical Toggler"
 
 minecraft {
     version = "1.7.10-10.13.2.1291"
