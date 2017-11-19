@@ -1,14 +1,12 @@
-package com.aokmikey.particlestoggler.proxy;
+package com.aokmikey.particlestoggler.client;
 
-import com.aokmikey.particlestoggler.client.settings.Keybindings;
 import cpw.mods.fml.client.registry.ClientRegistry;
 
 /**
  * Created by Mikey on 22/03/2015.
  */
-public class ClientProxy extends CommonProxy
+public class ClientProxy
 {
-    @Override
     public void registerKeyBindings()
     {
         ClientRegistry.registerKeyBinding(Keybindings.toggle);

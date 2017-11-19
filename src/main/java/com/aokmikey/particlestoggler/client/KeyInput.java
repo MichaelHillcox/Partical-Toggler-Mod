@@ -1,6 +1,5 @@
-package com.aokmikey.particlestoggler.client.handler;
+package com.aokmikey.particlestoggler.client;
 
-import com.aokmikey.particlestoggler.client.settings.Keybindings;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.InputEvent;
 import net.minecraft.client.Minecraft;
@@ -21,7 +20,7 @@ public class KeyInput
         {
             int particlesSettings = this.mc.gameSettings.particleSetting;
 
-            String message = "[Particles] Changed to -> ";
+            String message = "[Particles] ";
 
             if( particlesSettings == 0 )
             {
@@ -39,7 +38,6 @@ public class KeyInput
                 this.mc.thePlayer.addChatMessage(new ChatComponentTranslation(message +"All"));
             }
 
-            // System.out.println("Attempted "+ Minecraft.getMinecraft().gameSettings.particleSetting +" "+ particlesSettings);
         }
     }
 
