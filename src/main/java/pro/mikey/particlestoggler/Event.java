@@ -21,17 +21,17 @@ public class Event {
             if( particlesSettings == 0 )
             {
                 mc.gameSettings.particleSetting = 1;
-                mc.thePlayer.addChatMessage(new TextComponentTranslation("particlestoggler.decreased"));
+                mc.player.sendMessage(new TextComponentTranslation("particlestoggler.decreased"));
             }
             if( particlesSettings == 1 )
             {
                 mc.gameSettings.particleSetting = 2;
-                mc.thePlayer.addChatMessage(new TextComponentTranslation("particlestoggler.minimal"));
+                mc.player.sendMessage(new TextComponentTranslation("particlestoggler.minimal"));
             }
             if( particlesSettings == 2 )
             {
                 mc.gameSettings.particleSetting = 0;
-                mc.thePlayer.addChatMessage(new TextComponentTranslation("particlestoggler.all"));
+                mc.player.sendMessage(new TextComponentTranslation("particlestoggler.all"));
             }
         }
     }
