@@ -1,5 +1,5 @@
 [{
-	"modid": "particles",
+	"modid": "particlestoggler",
 	"name": "Particles",
 	"description": "Allows you to change your Particles setting through a button press",
 	"version": "${version}",
