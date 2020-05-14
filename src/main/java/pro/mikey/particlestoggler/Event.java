@@ -2,18 +2,19 @@ package pro.mikey.particlestoggler;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.InputEvent;
-import net.minecraftforge.fml.relauncher.Side;
 
-@Mod.EventBusSubscriber(Side.CLIENT)
+
+@Mod.EventBusSubscriber(Dist.CLIENT)
 public class Event {
 
     @SubscribeEvent
     public static void handleKeyInput(final InputEvent.KeyInputEvent event)
     {
-        Minecraft mc = Minecraft.getMinecraft();
+        Minecraft mc = Minecraft.getInstance();
 
         if( ParticleToggler.toggle.isKeyDown() )
         {

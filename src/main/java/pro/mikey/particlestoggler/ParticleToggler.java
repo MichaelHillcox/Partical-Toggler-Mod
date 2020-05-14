@@ -1,18 +1,18 @@
 package pro.mikey.particlestoggler;
 
 import net.minecraft.client.settings.KeyBinding;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import org.lwjgl.input.Keyboard;
+import org.lwjgl.glfw.GLFW;
 
-@Mod(modid = "particlestoggler", version = "1.12.2-1.3.0", name = "ParticleToggler", clientSideOnly = true)
+@Mod("particlestoggler")
 public class ParticleToggler
 {
-    static KeyBinding toggle = new KeyBinding("Toggle Particles", Keyboard.KEY_P, "particlestoggler.name");
+    static KeyBinding toggle = new KeyBinding("Toggle Particles", GLFW.GLFW_KEY_P, "particlestoggler.name");
 
-    @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-        ClientRegistry.registerKeyBinding(toggle);
+    public ParticleToggler() {
+        DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> ClientRegistry.registerKeyBinding(toggle));
     }
 }

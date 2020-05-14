@@ -1,0 +1,20 @@
+modLoader="javafml" #mandatory
+loaderVersion="[25,)" #mandatory (24 is current forge version)
+issueTrackerURL="https://github.com/MichaelHillcox/Partical-Toggler-Mod/issues" #optional
+[[mods]] #mandatory
+modId="particlestoggler" #mandatory
+version="${file.jarVersion}" #mandatory
+
+displayName="Particles Toggler" #mandatory
+updateJSONURL="https://raw.githubusercontent.com/MichaelHillcox/Partical-Toggler-Mod/master/versions.json" #optional
+displayURL="https://github.com/MichaelHillcox/Partical-Toggler-Mod" #optional
+authors="Michael Hillcox" #optional
+description='''
+Allows you to change your Particles setting through a button press
+'''
+[[dependencies.particlestoggler]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[25,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
