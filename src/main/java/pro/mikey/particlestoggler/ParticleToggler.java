@@ -10,9 +10,12 @@ import org.lwjgl.glfw.GLFW;
 @Mod("particlestoggler")
 public class ParticleToggler
 {
-    static KeyBinding toggle = new KeyBinding("Toggle Particles", GLFW.GLFW_KEY_P, "Particles Toggler");
+    static KeyBinding toggle;
 
     public ParticleToggler() {
-        DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> ClientRegistry.registerKeyBinding(toggle));
+        DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {
+            toggle = new KeyBinding("Toggle Particles", GLFW.GLFW_KEY_P, "particlestoggler.name");
+            ClientRegistry.registerKeyBinding(toggle);
+        });
     }
 }

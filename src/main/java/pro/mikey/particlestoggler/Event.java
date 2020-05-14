@@ -1,12 +1,13 @@
 package pro.mikey.particlestoggler;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.client.settings.ParticleStatus;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
 
 @Mod.EventBusSubscriber(Dist.CLIENT)
 public class Event {
@@ -18,21 +19,21 @@ public class Event {
 
         if( ParticleToggler.toggle.isKeyDown() )
         {
-            final int particlesSettings = mc.gameSettings.particleSetting;
-            if( particlesSettings == 0 )
+            final ParticleStatus particlesSettings = mc.gameSettings.particles;
+            if( particlesSettings == ParticleStatus.ALL )
             {
-                mc.gameSettings.particleSetting = 1;
-                mc.player.sendMessage(new TextComponentTranslation("particlestoggler.decreased"));
+                mc.gameSettings.particles = ParticleStatus.DECREASED;
+                mc.player.sendMessage(new TranslationTextComponent("particlestoggler.decreased"));
             }
-            if( particlesSettings == 1 )
+            if( particlesSettings == ParticleStatus.DECREASED )
             {
-                mc.gameSettings.particleSetting = 2;
-                mc.player.sendMessage(new TextComponentTranslation("particlestoggler.minimal"));
+                mc.gameSettings.particles = ParticleStatus.MINIMAL;
+                mc.player.sendMessage(new TranslationTextComponent("particlestoggler.minimal"));
             }
-            if( particlesSettings == 2 )
+            if( particlesSettings == ParticleStatus.MINIMAL )
             {
-                mc.gameSettings.particleSetting = 0;
-                mc.player.sendMessage(new TextComponentTranslation("particlestoggler.all"));
+                mc.gameSettings.particles = ParticleStatus.ALL;
+                mc.player.sendMessage(new TranslationTextComponent("particlestoggler.all"));
             }
         }
     }
